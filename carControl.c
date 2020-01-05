@@ -137,6 +137,7 @@ void main (void)
 		printf("Enter a direction\n");
 		scanf("%c", &direction);
 		
+		//Move Backwards
 		if (direction == 's'){
 		
 			pin2_0 = 0;
@@ -149,6 +150,7 @@ void main (void)
 			pin1_6 = 0;
 		
 		}
+		//Move Forward
 		else if (direction == 'w'){
 		
 			pin2_0 = 100;
@@ -162,6 +164,7 @@ void main (void)
 		
 		}
 		
+		//Move Left
 		else if (direction == 'a'){
 		
 			pin2_0 = 0;
@@ -175,6 +178,7 @@ void main (void)
 		
 		}
 		
+		//Move Right
 		else if (direction == 'd'){
 		
 			pin2_0 = 100;
@@ -187,7 +191,8 @@ void main (void)
 			pin1_6 = 0;
 		
 		}
-		
+
+		//Don't Move
 		else{
 		
 			pin2_0 = 0;
